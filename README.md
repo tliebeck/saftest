@@ -1,5 +1,7 @@
 # SAFTest
 Android/Java Conventional File API / Storage Access Framework Performance Test
+* [Pre-built APK Download](http://android.nextapp.com/project/saftest/release/r1/SAFTest_r1.apk)
+
 
 ![App Screenshot](doc/image/saftest-pixel-small.png )
 
