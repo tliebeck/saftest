@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">SAFTest</string>
+
+    <string name="about">
+        This test app compares the performance between conventional Android File I/O
+        and the \"Storage Access Framework\" (SAF).  All apps will be required to use the SAF in
+        Android Q / Android 10 for general file access.\n
+        \nThis test visits each directory in the user-accessible internal storage to count files, folders,
+        and total file size.\n
+        \nA file manager or other application will perform a similar operation to build an index, search, or
+        help the user clean up unnecessary files.
+    </string>
+
+    <string name="result_warning_size_delta">
+        Warning: sizes differ significantly.\n
+        \n* Ensure you have selected the device\'s \"Internal Storage\" as the SAF Target.\n
+        \n* (Android Q+ Only) Ensure this app (nextapp.saftest)
+        has been granted legacy-storage access by appops.\n
+        \nOn Android Q, you must execute the following command via adb on a computer to grant legacy-storage access
+        (on a single line), and then restart the app:\n
+        \nadb shell cmd appops set nextapp.saftest android:legacy_storage allow
+    </string>
+    <string name="result_format">Performance factor: %s</string>
+    <string name="result_in_progress">Test in progress&#8230;</string>
+
+    <string name="property_files_folders">Files / Folders</string>
+    <string name="property_size_bytes">Size (bytes)</string>
+    <string name="property_time_ms">Time (milliseconds)</string>
+    <string name="header_conventional">Conventional Android File I/O</string>
+    <string name="header_saf">Storage Access Framework</string>
+    <string name="action_select_saf_target">Select SAF Target</string>
+    <string name="value_no_uri">No URI selected</string>
+
+</resources>

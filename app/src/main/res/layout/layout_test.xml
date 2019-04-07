@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:tools="http://schemas.android.com/tools"
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       tools:ignore="HardcodedText">
+
+    <FrameLayout
+            style="@style/TestPropertyContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.5dp">
+        <TextView
+                style="@style/TestPropertyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/property_files_folders"/>
+        <TextView
+                style="@style/TestPropertyValue"
+                android:id="@+id/countView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-"/>
+    </FrameLayout>
+
+    <FrameLayout
+            style="@style/TestPropertyContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.5dp">
+        <TextView
+                style="@style/TestPropertyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/property_size_bytes"/>
+        <TextView
+                style="@style/TestPropertyValue"
+                android:id="@+id/sizeView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-"/>
+    </FrameLayout>
+
+    <FrameLayout
+            style="@style/TestPropertyContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.5dp">
+        <TextView
+                style="@style/TestPropertyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/property_time_ms"/>
+        <TextView
+                style="@style/TestPropertyValue"
+                android:id="@+id/timeView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="---"/>
+
+    </FrameLayout>
+
+</merge>
