@@ -16,19 +16,13 @@ class SAFTest(
 
         val COLUMNS = arrayOf(
             DocumentsContract.Document.COLUMN_DOCUMENT_ID,
-            DocumentsContract.Document.COLUMN_DISPLAY_NAME,
             DocumentsContract.Document.COLUMN_MIME_TYPE,
-            DocumentsContract.Document.COLUMN_FLAGS,
-            DocumentsContract.Document.COLUMN_SIZE,
-            DocumentsContract.Document.COLUMN_LAST_MODIFIED
+            DocumentsContract.Document.COLUMN_SIZE
         )
 
         const val INDEX_DOCUMENT_ID = 0
-        const val INDEX_DISPLAY_NAME = 1
-        const val INDEX_MIME_TYPE = 2
-        const val INDEX_FLAGS = 3
-        const val INDEX_SIZE = 4
-        const val INDEX_LAST_MODIFIED = 5
+        const val INDEX_MIME_TYPE = 1
+        const val INDEX_SIZE = 2
     }
 
     override suspend fun execute() {
